@@ -7,7 +7,7 @@ function clickbutton(){
   //automatically take user to page two
   location.href="two.html";
 }
-function getUser(){
+function giveUser(){
   var b = localStorage.getItem(uName);
   document.getElementById('placeholder').innerHTML = "Hello " + b;
 }

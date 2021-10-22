@@ -8,6 +8,6 @@ function clickbutton(){
   location.href="two.html";
 }
 function getUser(){
-  var b = localStorage.getItem(uName);
+  var b = localStorage.getItem('uName');
   document.getElementById('placeholder').innerHTML = "Hello " + b;
 }

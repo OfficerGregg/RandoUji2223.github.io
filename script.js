@@ -1,6 +1,13 @@
-a=[]
+var a;
 function clickbutton(){
-  var b = document.getElementById('name').value;
-  a.unshift(b)
-  window.alert(a)
+    //get value from input field and save as "a"
+  a= document.getElementById('name').value;
+  //create LS key with value of 'a'
+  localStorage.setItem('uName',a);
+  //automatically take user to page two
+  location.href="two.html";
+}
+function cum(){
+  var b = localStorage.getItem(uName);
+  document.getElementById('placeholder').innerHTML = "Hello " + b;
 }
